@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background: #981198;
+    color: #000;
+    font-family: sans-serif;
+}
+.full{
+    width: 90%;
+    margin: auto;
+
+}
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 5;
+    font-size: 1.5rem;
+    display: none;
+}
+.nav-container img{
+    width: 80px;
+    height: 70px;
+    margin-top: 10px;
+}
+.nav-container ul{
+    flex:1;
+}
+a{
+    text-decoration: none;
+    color:#000;
+
+}
+.btn{
+    color: #000;
+}
+.nav-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+.nav-container ul{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-container li{
+    margin-left: 5px;
+    padding: 9px;
+}
+/*HEADER */
+.container-header{
+    background: url('./img/itsuki-gotoubun-horizontalFondoColores.png') no-repeat center 85%/cover;
+    height: 450px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.container-header div{
+    width: 50%;
+    margin-left: 10px;
+
+}
+.container-header h2{
+    font-size: 200%;
+}
+.container-header p{
+    margin: 10px 0;
+    font-size: 110%;
+}
+.container-header h3{
+    background: #595979;
+    display: inline-block;
+    padding: 8px 15px;
+}
+
+/* CARTAS GRID */
+.container-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+.container-div img{
+    width: 100%;
+    height: 250px;
+}
+.container-div h2,p{
+    padding: 5px;
+}
+.container-div h3{
+    background: #595979;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 6px 13px;
+    margin-top: 5px;
+}
+
+/* SECTION */
+.container-section{
+    background: url('./img/team-nakano.png') no-repeat center 3%/cover;
+    height: 400px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+}
+.container-section div{
+    margin-bottom: 20px;
+    width: 80%;
+}
+.container-section h2{
+    font-size: 200%;
+}
+.container-section p{
+    font-size: 110%;
+    margin: 8px;
+}
+
+.container-section h3{
+    background: #795959;
+    display: inline-block;
+    padding: 9px 17px;
+}
+/* FOOTER  */
+.container-footer{
+    background: #5fa55f;
+    margin-bottom: 20px;
+    height: fit-content;
+    padding: 15px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.container-footer ul{
+    margin: auto;
+}
+.container-footer li:first-child{
+    font-size: 100%;
+}
+.container-footer li{
+    font-size: 90%;
+    line-height: 4;
+    text-transform: uppercase;
+
+}
+/* TEXTO EDITABLE */
+.contenido{
+    text-align: center;
+    margin-top: 40px;
+    color: #2b722b;
+}
+.contenido p{
+    display: inline-block;
+    text-transform: uppercase;
+    color: #922;
+    font-weight: bold;
+}
+@media (max-width: 750px) {
+    body{
+        background: #118;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .nav-container img{
+        opacity: 1;
+    }
+    .nav-container ul{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 104.5%;
+        padding: 30px;
+        transform: translateY(-20px);
+        transform: translateX(-400px);
+        opacity: .9;
+    }
+    .nav-container ul.menu-nav{
+        padding:30px;
+    }
+    .nav-container ul.menu-nav.show{
+        transform: translateX(0);
+        transform: translateY(-20px);
+
+    }
+    .full{
+        width: 100%;
+    }
+    .container-header{
+        background-position: right;
+    }
+    .container-header div{
+        width: 80%;
+    }
+    .container-div{
+        grid-template-columns: 1fr 1fr;
+        margin: 20px auto;
+    }
+    .container-section {
+        background-size: static;
+    }
+    .container-footer div{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:500px){
+    .container-div{
+        grid-template-columns: 1fr;
+    }
+    .container-div img{
+        height: 270px;
+    }
+    .container-footer div{
+        grid-template-columns: 1fr;
+    }
+}
+

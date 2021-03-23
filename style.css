@@ -24,6 +24,7 @@ body{
     font-size: 1.5rem;
     display: none;
 }
+
 .nav-container img{
     width: 80px;
     height: 70px;
@@ -58,7 +59,7 @@ a{
 /*HEADER */
 .container-header{
     background: url('./img/itsuki-gotoubun-horizontalFondoColores.png') no-repeat center 85%/cover;
-    height: 450px;
+    height: 500px;
     padding: 15px;
     display: flex;
     align-items: center;
@@ -106,7 +107,7 @@ a{
 /* SECTION */
 .container-section{
     background: url('./img/team-nakano.png') no-repeat center 3%/cover;
-    height: 400px;
+    height: 450px;
     margin: 20px 0;
     display: flex;
     justify-content: center;
@@ -133,8 +134,8 @@ a{
 /* FOOTER  */
 .container-footer{
     background: #5fa55f;
-    margin-bottom: 20px;
-    height: fit-content;
+
+    height: 100%;
     padding: 15px;
 }
 .footer{
@@ -159,7 +160,7 @@ a{
 /* TEXTO EDITABLE */
 .contenido{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     color: #2b722b;
 }
 .contenido p{
@@ -170,7 +171,7 @@ a{
 }
 @media (max-width: 750px) {
     body{
-        background: #118;
+        background: #ededed;
     }
     .menu-btn{
         display: block;
@@ -183,12 +184,16 @@ a{
         position: absolute;
         top: 0;
         left: 0;
-        background: #2f3640;
+        background: #687a94;
         height: 104.5%;
-        padding: 30px;
         transform: translateY(-20px);
         transform: translateX(-400px);
         opacity: .9;
+        line-height: 2.3;
+        transition: .5s;
+    }
+    .nav-container a:hover{
+        text-decoration: underline;
     }
     .nav-container ul.menu-nav{
         padding:30px;
@@ -207,12 +212,12 @@ a{
     .container-header div{
         width: 80%;
     }
-    .container-div{
+    .container-div {
         grid-template-columns: 1fr 1fr;
-        margin: 20px auto;
+        gap: 10px;
     }
-    .container-section {
-        background-size: static;
+    .container-div div{
+        margin: 20px auto;
     }
     .container-footer div{
         grid-template-columns: 1fr 1fr;
@@ -223,10 +228,14 @@ a{
         grid-template-columns: 1fr;
     }
     .container-div img{
-        height: 270px;
+        height: 300px;
     }
     .container-footer div{
         grid-template-columns: 1fr;
+    }
+
+    .footer ul{
+        margin: auto;
     }
 }
 

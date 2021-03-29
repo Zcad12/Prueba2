@@ -10,36 +10,35 @@ body{
     color: #000;
     font-family: sans-serif;
 }
+a{
+    text-decoration: none;
+    color:#000;
+}
 .full{
     width: 90%;
     margin: auto;
 
 }
+.btn{
+    color: #000;
+}
 .menu-btn{
     position: absolute;
     cursor: pointer;
     top: 15px;
-    right: 30px;
+    right:15px;
     z-index: 5;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     display: none;
 }
-
+/* NAVEGADOR*/
 .nav-container img{
-    width: 80px;
+    width: 100px;
     height: 70px;
     margin-top: 10px;
 }
 .nav-container ul{
     flex:1;
-}
-a{
-    text-decoration: none;
-    color:#000;
-
-}
-.btn{
-    color: #000;
 }
 .nav-container {
     display: flex;
@@ -56,6 +55,14 @@ a{
     margin-left: 5px;
     padding: 9px;
 }
+
+/* NAV-CONTAINER-MOVIL*/
+.nav-container-movil{
+    margin: auto;
+    margin-left: 16%;
+    display: none;
+}
+
 /*HEADER */
 .container-header{
     background: url('./img/itsuki-gotoubun-horizontalFondoColores.png') no-repeat center 85%/cover;
@@ -169,11 +176,25 @@ a{
     color: #922;
     font-weight: bold;
 }
+@media (max-width:900px){
+    
+    .container-div{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .container-div img{
+        height: 320px;
+    }
+    
+}
 @media (max-width: 750px) {
     body{
         background: #ededed;
     }
     .menu-btn{
+        display: block;
+    }
+    .nav-container-movil{
         display: block;
     }
     .nav-container img{

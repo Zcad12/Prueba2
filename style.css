@@ -62,7 +62,6 @@ a{
     
     display: none;
 }
-
 /*HEADER */
 .container-header{
     background: url('./img/itsuki-gotoubun-horizontalFondoColores.png') no-repeat center 85%/cover;
@@ -149,8 +148,10 @@ a{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    /*QUITE ESTO 
     align-items: flex-start;
     justify-content: center;
+    */
 }
 .container-footer ul{
     margin: auto;
@@ -160,7 +161,8 @@ a{
 }
 .container-footer li{
     font-size: 90%;
-    line-height: 4;
+    /*CAMBIE EL LINE HEIGT DE 4 A 3.2*/
+    line-height: 3.2;
     text-transform: uppercase;
 
 }
@@ -184,6 +186,9 @@ a{
     }
     .container-div img{
         height: 320px;
+    }
+    .container-footer li{
+        text-align: center;
     }
     
 }
